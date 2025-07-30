@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px);}
+  to { opacity: 1; transform: translateY(0);}
+}
+.animate-fadeIn {
+  animation: fadeIn 0.4s;
+}
+
+.auth-container {
+  max-width: 350px;
+  margin: 80px auto;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+  text-align: center;
+}
+.auth-container input {
+  width: 100%;
+  margin: 0.5rem 0;
+  padding: 0.7rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+.auth-container button {
+  width: 100%;
+  padding: 0.7rem;
+  background: #1976d2;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  margin-top: 1rem;
+  font-weight: 600;
+}
+.auth-container .error {
+  color: #d32f2f;
+  margin-top: 0.5rem;
+}
+.auth-container .success {
+  color: #388e3c;
+  margin-top: 0.5rem;
+}
